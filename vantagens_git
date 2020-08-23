@@ -1,1 +1,16 @@
+Resumo de quais as vantagens de se utilizar o git:
 
+   O Git é um sistema de Controle de Versão Distribuído (DVCS), e usa a concepção de repositório local, onde você tem uma cópia do “repositório completo” do seu projeto. Você pode commitar as modificações que fez nos arquivos do seu projeto para o repositório local. O Git também permite que você trabalhe completamente offline, isto é, mesmo quando você não tem acesso ao repositório remoto. Depois, você pode sincronizar ou compartilhar as modificações que fez, quando tiver acesso online ao repositório remoto.
+
+   As vantagens estão relacionadas à distribuição do processamento, redundância/replicação de repositórios e às novas possibilidades de colaboração entre desenvolvedores (novos fluxos de trabalho).
+
+Do Ponto de Vista do Desenvolvedor:
+  > Rapidez. As operações são processadas localmente. Não é necessário passar pela rede e contatar o servidor central para fazer um commit, log ou diff por exemplo.
+  > Autonomia. A conexão com a rede só é necessária para trocar revisões com outros repositórios. Fora isso, trabalha-se desconectado e em qualquer lugar, como num cliente por exemplo.
+  > Branches (Ramos) individuais: contrariamente aos chamados sistemas centralizados, combinar branches não é uma obrigação para cada commit e antes uma decisão que depende do programador; o trabalho local faz-se num branch individual que não tem interferência com os demais branches, mesmo em processos de sincronização entre repositórios.
+  > Facilidade na Fusão: os DVCS usam o rastreamento automático, o que facilita de forma significativa o processo de fusão.
+
+Do Ponto de Vista da Gerência/Coordenação:
+  Parte das decisões gerenciais envolve manter livre o caminho da equipe para que possam trabalhar da melhor maneira possível. Outras decisões importantes são sobre redução de custos. Nestes dois casos específicos, o modelo distribuído oferece as seguintes vantagens:
+   > Confiabilidade. No sistema centralizado, uma pane no servidor interrompe todo o desenvolvimento. Já no sistema distribuído, além de a equipe poder continuar seu trabalho, os repositórios dos desenvolvedores funcionam como cópias de backup de todo o projeto.
+   > Redução de custos com servidor. A carga de processamento fica distribuída nas próprias máquinas dos desenvolvedores. O repositório "central", quando existe, tem o papel do repositório "oficial" e não como processador central das requisições.
